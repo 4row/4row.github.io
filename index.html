@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>PASS CLUB</h1>
+
+<p>Welcome to the official Pass Club , Here you can redeem your Passes! Have a good day.</p>
+
+<button onclick="showContent()">Click to redeem your pass</button>
+
+<template>
+  <h2>Here's Your N-Word Pass<h2>
+  <img src="https://pbs.twimg.com/media/EOKKz3bX0AAUWEa.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
